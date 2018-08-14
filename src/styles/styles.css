@@ -1,0 +1,99 @@
+.drop--button {
+    background-color: #0d0;
+    color: #fff;
+    padding: 20px;
+    font-size: 14px;
+    border: none;
+    text-align: center;
+    transition: all 1s ease-in-out;
+}
+
+.drop--up--down {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    transform: translate(50%, 50%);
+    transition: all 1s ease-in-out;
+}
+
+.dropup--content--up,
+.dropup--content--down,
+.dropup--content--left,
+.dropup--content--right {
+    opacity: 0.0;
+    position: absolute;
+    background-color: #888;
+    z-index: 1;
+    width: 200px;
+    transition: all 1s ease-in-out;
+}
+
+.dropup--content--up {
+    top: 100%;
+}
+
+.dropup--content--down {
+    bottom: 100%;
+}
+
+.dropup--content--right {
+    top: 0%;
+    left: 100%;
+}
+
+.dropup--content--left {
+    top: 0%;
+    right: 100%;
+}
+
+.dropup--content--down--left {
+    top: 100%;
+    right: 100%;
+}
+
+.dropup--content--up--left {
+    bottom: 100%;
+    right: 100%;
+}
+
+.dropup--content--down--right {
+    top: 100%;
+    left: 100%;
+}
+
+.dropup--content--up--right {
+    bottom: 100%;
+    left: 100%;
+}
+
+.dropup--content--down a,
+.dropup--content--up a,
+.dropup--content--left a,
+.dropup--content--right a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    transition: all 1s ease-in-out;
+}
+
+.dropup--content--down a:hover,
+.dropup--content--up a:hover,
+.dropup--content--left a:hover,
+.dropup--content--right a:hover {
+    background-color: #ccc;
+    transition: all 1s ease-in-out;
+}
+
+.drop--up--down:hover .dropup--content--down,
+.drop--up--down:hover .dropup--content--up,
+.drop--up--down:hover .dropup--content--left,
+.drop--up--down:hover .dropup--content--right {
+    opacity: 1.0;
+    transition: all 1s ease-in-out;
+}
+
+.drop--up--down:hover .drop--button {
+    background-color: #3e8e41;
+    transition: all 1s ease-in-out;
+}
